@@ -6,7 +6,7 @@ run () {
   echo "Connected to openconnect!"
 }
 
-squid3 -NYCd 1
+squid3 -NYCd 1 &
 
 until (run); do
   echo "openconnect exited. Restarting process in 60 seconds…" >&2
