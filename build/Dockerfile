@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM debian:buster-slim
 
 RUN apt-get update 
 RUN apt-get install -y openconnect squid3 curl net-tools nano
